@@ -155,6 +155,7 @@ endmodule
 ```
 
 **测试结果:**
+
 ![](https://i.imgur.com/aJanpZE.png)
 
 
@@ -263,7 +264,8 @@ always @(current_state) begin
 end
 endmodule
 ```
-测试结果：
+**测试结果：**
+
 ![](https://i.imgur.com/5Tpu5qQ.png)
 
 
