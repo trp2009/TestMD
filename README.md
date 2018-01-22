@@ -162,6 +162,10 @@ endmodule
 ### 简单状态机
 **目标：** 实现一个状态机，能够检测序列110:sunglasses:
 
+**状态转换图：** 
+
+![](https://i.imgur.com/hmSGfa7.png)
+
 **状态机代码：**
 ```verilog
 `timescale 1ns / 1ps
