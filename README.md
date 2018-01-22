@@ -81,12 +81,12 @@ FPGA由一系列的**可编程逻辑模块（PLB）**，和一系列可以重复
 使用Verilog描述硬件的基本设计单元是模块（module）。构建复杂的电子电路，主要是通过模块的相互连接调用来实现的。模块被包含在关键字module、endmodule之内。实际的电路元件。Verilog中的模块类似C语言中的函数，它能够提供输入、输出端口，可以实例调用其他模块，也可以被其他模块实例调用。模块中可以包括组合逻辑部分、过程时序部分。例如，四选一的多路选择器，就可以用模块进行描述。它具有两个位选输入信号、四个数据输入，一个输出端，在Verilog中可以表示为：
 ```verilog
 module mux (out, select, in0, in1, in2, in3);
-	input [1:0] select; //位选输入信号
-	input in0, in1, in2, in3;
-	output out;
-	/*
-		具体的寄存器传输级代码
-	*/
+input [1:0] select; //位选输入信号
+input in0, in1, in2, in3;
+output out;
+/*
+	具体的寄存器传输级代码
+*/
 endmodule
 ```
 Verilog所用到的所有变量都属于两个基本的类型：**wire** (线网类型）和 **reg**（寄存器类型）：
